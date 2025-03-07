@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 1</title>
+    <script>/* 
+1.Crie um script que armazene solicite o nome de 5 pessoas, pergunte se deseja imprimir e,
+caso sim, imprima os cinco nomes em linhas diferentes.*/
+
+        var nomes = new Array(5);
+        for(var i = 0; i< nomes.length;i++){
+            nomes[i] = prompt("Digite um nome:")
+        }
+        resposta = confirm("Deseja imprimir ?")
+        if(resposta == true){
+        for (var i = 0; i< nomes.length;i++){
+            document.write(nomes[i]+"<br>")
+        } 
+    }
+    </script>
+</head>
+<body>
+</body>
+</html>

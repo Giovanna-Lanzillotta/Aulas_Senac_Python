@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/*Faça um algoritmo que leia um número indeterminado de notas e nomes de alunos
+enquanto houverem notas a serem lidas.Ao final, imprima em cada linha, o nome e a nota de
+cada aluno e o tamanho total do vetor  */
+
+        var notas = [] //declaração
+        var nomes = []
+        var resposta = true
+        var i = 0
+
+        while (resposta) {
+            nomes.push(prompt("Digite um nome: "))
+            //document.write(nomes+"<br>")
+            //document.write("O tamanho do vetor é "+nomes.length+"<br>")
+
+            notas.push(parseFloat(prompt("Digite uma nota: ")))
+            //document.write(notas+"<br>")
+            //document.write("O tamanho do vetor é "+notas.length+"<br>")
+
+            resposta = confirm("Digite novo aluno:")
+            document.write(nomes[i]+" - "+notas[i]+"<br>")
+            i++
+        }
+        document.write("O tamanho do vetor nomes é " + notas.length + "<br>")
+        document.write("O tamanho do vetor notas é " + nomes.length + "<br>")
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

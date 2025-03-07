@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*Faça um algorito que leia nome e duas notas de alunos:
+        uma nota de prova e outra de recuperação.
+        Este algoritmo deve analisar as duas notas 
+        e armazenar somente a maior nota no boletim.
+        Ao final,imprima:Nome do aluno,Nota de prova,
+        nota de recuperação e Nota final no boletim*/
+
+        var notas1 = []
+        var notas2 = []
+        var nomes = []
+        var boletim = []
+        var resposta = true
+        i = 0
+
+        while (resposta) {
+            nomes.push(prompt("Digite o nome do aluno"))
+            notas1.push(parseFloat(prompt("Digite a nota da prova")))
+            notas2.push(parseFloat(prompt("Digite a nota da recuperação")))
+
+            if(notas1 > notas2){
+                boletim[i] = notas1
+            }else {}
+                boletim[i] = notas2
+            
+
+            resposta = confirm("Digite um novo aluno:")
+            document.write(nomes[i]+" - "+notas1[i]+" - "+notas2[i]+" - "+boletim[i]+"<br>")
+            i++
+        
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
