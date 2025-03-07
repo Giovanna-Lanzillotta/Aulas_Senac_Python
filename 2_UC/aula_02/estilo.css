@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body{
+background-color:Cornsilk;}
+
+h3{color:white;
+font-family:"Courier New";
+background-color:MediumVioletRed}
+
+.bananada, h2, a, .mariola{
+font-size:30px;
+font-family:arial;
+color:darkorange;
+background-color:PaleGoldenrod;
+}
+
+#qualquer-hum{
+color:purple;
+}
+
+.mariola{
+font-style:italic;
+}
+
+.mariola{
+color:chocolate;
+}
