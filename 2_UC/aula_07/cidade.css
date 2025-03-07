@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+html{
+   scroll-behavior: smooth; 
+}
+
+body{
+    margin:12px; 
+    }
+ 
+    #principal{
+       /* width: 600px;*/
+        margin:20px auto 20px;
+    }
+
+    #bem-vindos{
+        background-color: rgb(190, 220, 255);
+        padding: 15px 0;
+        font-size:16px; 
+        width: 100%;
+    }
+
+    #historia{
+        background-color: rgb(166, 219, 226);
+        padding: 15px 0;
+        font-size:16px; 
+        width: 100%;
+    }
+
+    #pontos-turisticos{
+        background-color: rgb(186, 253, 255);
+        padding: 15px 0;
+        font-size:16px; 
+        width: 100%;
+    }
+
+    #Restaurantes-e-Hoteis{
+        background-color: rgb(195, 214, 255);
+        padding: 15px 0;
+        font-size:16px; 
+        width: 100%;
+    }
+
+    #galeria{
+        background-color: rgb(183, 255, 243);
+        padding: 15px 0;
+        font-size:16px; 
+        width: 100%;
+    }
+
+    #contato{
+        background-color: rgb(222, 255, 202);
+        padding: 15px 0;
+        font-size:16px; 
+        width: 100%;
+    }
+    
+    #menu{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top:0;
+        background-color: rgb(55, 21, 253);
+       /* background-image: linear-gradient(to left,green, yellow,blue);*/
+    }
+    
+    #menu a{
+        margin: 5px 10px;
+        font-family: arial,sans-serif;
+        font-size:20px;
+        text-align:center;
+        text-decoration:none;
+        color:rgb(255, 255, 255);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       /* color:black*/
+    }
+    
+    section{
+        padding: 15px 0;
+        font-size:16px;
+    }
+
+    a:hover{
+        background-color: rgb(0, 180, 216);
+        border-radius: 5px;
+
+    }
+
+.galeria{
+width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagem {
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+  }
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s;
+  }
+
+.imagem:hover img {
+  /*  transform: scale(1.1);*/
+  transform:scale(1.2);
+  }
+
+img{
+        width: 50%;      
+}
+
+.fotos-pontos{
+    width: 60%;
+    text-align:center;
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+#rodape{
+    width: 100%;
+    height: 155px;
+    background-image: url("chao_copa.png") ;
+    /* background-color: black;
+    color: white; */
+}
+
+h1{
+    text-align:center;
+    color:rgb(55, 21, 253);
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+h3{
+    text-align:left;
+    margin: 20px;
+    color:rgb(55, 21, 253);
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+p{
+    text-align:start;
+    margin:15px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-indent: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
