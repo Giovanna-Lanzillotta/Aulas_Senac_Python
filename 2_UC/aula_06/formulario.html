@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <h1>Entre em contato</h1>
+
+    <form method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <p>
+                <label for="nome">Nome:</label><br>
+            <input name="nome" class="preenche" type="text" placeholder="Coloque seu nome" required>
+            </p>
+
+            <p>
+                <label for="telefone">Telefone:</label><br>
+                <input name="telefone" class="preenche" type="tel" placeholder="Coloque o DDD" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input name="email" class="preenche" type="email" placeholder="E-mail válido" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem:</legend>
+            <label for="mensagem">Descreva sua dúvida:</label><br>
+            <textarea name="mensagem"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Infos Adicionais:</legend>
+            <p>Você gosta de carros?</p>
+            <input name="carro" type="radio" value="sim">
+            <label for="carro">Sim</label>
+            <input name="carro" type="radio" value="nao">
+            <label for="carro">Não</label>
+
+            <p>Quais marcas de carro você conhece?</p>
+            <input name="veiculo" type="checkbox" value="volks">
+            <label for="veiculo">Volkswagen</label>
+            <input name="veiculo" type="checkbox" value="GM">
+            <label for="veiculo">GM</label>
+            <input name="veiculo" type="checkbox" value="fiat">
+            <label for="veiculo">Fiat</label>
+            <input name="veiculo" type="checkbox" value="byd">
+            <label for="veiculo">Byd</label>
+
+            <p>Você tem algum veículo?</p>
+            <label for="tipo">Veículos:</label>
+            <select name="tipo">
+                <option value="nenhum">Nenhum</option>
+                <option value="bicicleta">Bicicleta</option>
+                <option value="moto">Moto</option>
+                <option value="carro">Carro</option>
+                <option value="iate">Iate</option>
+                <option value="aviao">Avião</option>
+                <option value="outros">Outros</option>
+            </select>
+        </fieldset>
+
+        <p class="alinha"><button name="enviar" type="submit">Enviar!</button></p>
+
+
+    </form>
+</body>
+</html>

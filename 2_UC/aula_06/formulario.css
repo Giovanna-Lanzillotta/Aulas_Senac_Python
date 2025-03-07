@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+body{
+font-family:sans-serif;
+background-color:#D6EAF8;
+}
+
+h1{
+text-align:center;
+color:#154360;
+}
+
+form{
+width:500px;
+margin:auto;
+border:solid 5px wheat;
+border-radius:18px;
+padding:20px;
+color:wheat;
+background-color:#154360;
+}
+
+fieldset{
+border:double 4px wheat;
+border-radius:6px;
+color:wheat;
+background-color:#1B4F72;
+}
+
+.preenche{
+width:100%;
+height:30px;
+}
+
+input{
+border:solid 1px wheat;
+border-radius:6px;
+color:wheat;
+background-color:#2874A6;
+}
+
+
+input::placeholder{
+text-align:center;
+color:#BDB76B70;
+}
+
+placeholder{color:red}
+
+textarea{
+width:100%;
+height:250px;
+border:solid 1px wheat;
+border-radius:6px;  
+color:wheat;
+background-color:#2874A6;
+}
+
+select{
+color:wheat;
+background-color:#3498DB;
+}
+
+.alinha{text-align: center;}
+
+button{
+width:300px;
+height:auto;
+margin:20px;
+border:solid 5px wheat;
+border-radius:8px;
+font-size:50px;
+color:#154360;
+background-color:#D6EAF8;
+}
