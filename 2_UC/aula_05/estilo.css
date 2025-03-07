@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* codigo 1
+.pai{
+   background-color: rgb(249, 199, 253);
+   overflow: hidden;
+}
+
+.filho{
+    width: 20%;
+    height: 100px;
+    float: left;
+    color: white;
+    background-color: rgb(197, 120, 248);
+}
+
+.filho2{
+    width: 75%;
+    height: 100px;
+    float: right;
+    color: rgb(5, 5, 5);
+    background-color: rgb(225, 248, 120);
+}
+*/
+
+/*  codigo 2
+.pai{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(255, 100, 29);
+}
+
+.caixa{
+    width: 24%;
+    height:300px;
+    background-color: rgb(236, 232, 151);
+}
+
+.caixa img{
+    width: 100%;
+}
+
+*/
+
+/* -------------INICIO DESK ------------ */
+@media screen and (min-width: 1024px) {  
+#topo{
+    width:80%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color:red;
+}
+
+.logo{
+    width: 20%;
+    height:50px;
+    background-color:brown;
+    float:left;
+    overflow: hidden;
+}
+
+.menu{
+    width: 80%;
+    height: 50px;
+    float:left;
+    background-color: pink;
+}
+
+#principal{
+    width:80%;
+    height:auto;
+    margin:auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color:orange;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-color: gold;
+}
+
+#destaques{
+    margin:20px 0;
+    display:flex;
+    justify-content: space-between;
+    background-color: coral;
+}
+
+.dest{
+    width: 23%;
+    height: auto;
+    background-color: darkorange;
+}
+
+.dest img{width: 100%;}
+
+#noticias{
+    margin:20px 0;
+    display:flex;
+    justify-content: space-between;
+    background-color: green;
+}
+
+.not{
+    width: 48%;
+    height: auto;
+    background-color: lightgreen;
+}
+
+.not img{
+    width: 40%;
+    margin-right: 20px;
+    height: auto;
+    float: left;
+}
+
+#rodape{
+    width:80%;
+    height: 200px;
+    margin: auto;
+    background-color: yellow;
+}
+}/* -------------FIM DESK ------------ */
+
+/* -------------INICIO TABLET ------------ */
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+   
+    #topo{
+        width:90%;
+        height: auto;
+        margin: auto;
+        background-color:red;
+    }
+    
+    .logo{
+        width: 20%;
+        height:50px;
+        margin:auto;
+        background-color:brown;
+        overflow: hidden;
+    }
+    
+    .menu{
+        width: 100%;
+        height: 50px;
+        background-color: pink;
+    }
+
+    #principal{
+        width:90%;
+        height:auto;
+        margin:auto;
+        padding: 20px 0;
+        box-sizing: border-box;
+        background-color:orange;
+    }
+    
+    .banner{
+        width: 100%;
+        height: 300px;
+        background-color: gold;
+    }
+
+    #destaques{
+        margin:20px 0;
+        overflow: hidden;
+        background-color: coral;
+    }
+    
+    .dest{
+        width: 49%;
+        height: auto;
+        background-color: darkorange;
+        float: left;
+    }
+    
+    .dest img{width: 100%;}
+
+    #noticias{
+        margin:20px 0;
+        justify-content: space-between;
+        background-color: green;
+    }
+    
+    .not{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-color: lightgreen;
+    }
+    
+    .not img{
+        width: 40%;
+        margin-right: 20px;
+        height: auto;
+        float: left;
+    }
+
+    #rodape{
+        width:90%;
+        height: 200px;
+        margin: auto;
+        background-color: yellow;
+    }
+}/* -------------FIM TABLET ------------ */
+
+/* -------------INICIO SMART ------------ */
+@media screen and (max-width: 480px) {
+
+    #topo{
+        width:100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        background-color:red;
+    }
+    
+    .logo{
+        width: 40%;
+        height:50px;
+        background-color:brown;
+        overflow: hidden;
+    }
+    
+    .menu{
+        width: 20%;
+        height: 50px;
+        background-color: pink;
+    }
+
+
+    #principal{
+        width:100%;
+        height:auto;
+        margin:auto;
+        padding: 20px 0;
+        box-sizing: border-box;
+        background-color:orange;
+    }
+    
+    .banner{
+        display: none;
+    }
+
+    #destaques{
+        margin:20px 0;
+        background-color: coral;
+    }
+    
+    .dest{
+        width: 100%;
+        height: auto;
+        background-color: darkorange;
+    }
+    
+    .dest img{width: 100%;}
+
+    #noticias{
+        margin:20px 0;
+        justify-content: space-between;
+        background-color: green;
+    }
+    
+    .not{
+        width: 100%;
+        height: auto;
+        background-color: lightgreen;
+    }
+    
+    .not img{
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    #rodape{
+        width:100%;
+        height: 200px;
+        margin: auto;
+        background-color: yellow;
+    }
+}/*---------------FIM SMART -------------- */
