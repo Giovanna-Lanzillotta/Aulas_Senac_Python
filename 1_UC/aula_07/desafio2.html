@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 2</title>
+    <script>
+        /*
+Desafio 2  - O cardápio de uma lancheria é o seguinte:
+    Especificação		   Código	    Preço
+    Cachorro quente	        100			1,20
+    Bauru simples			101			1,30
+    Bauru com ovo		    102			1,50
+    Hambúrger			    103			1,20
+    Cheeseburguer		    104			1,30
+    Refrigerante			105			1,00
+Escrever um algoritmo que leia o código do item pedido,a quantidade e calcule o valor a ser pago por aquele lanche.Considere que a cada execução somente será calculado um item,ou 
+seja,um pedido de uma pessoas só poderá ter um item da lista.Ao final,imprima:
+    1. o código o pedido de cada cliente
+    2. o código do item, o preço unitário, a quantidade e o valor total que cada cliente pagou
+    3. o valor total acumulado de todos os pedidos */
+
+    var codigoItem,codigoPedido,pedido,precoUnitario,preco
+        var resposta = true
+        var valorAcumulado = 0
+        while (resposta) {
+            var codigoPedido = parseInt(prompt("Digite o código do produto:"))
+            var qtd = parseInt(prompt("Qual a quantidade?"))
+            if(codigoPedido == 100){
+                    codigoItem ="C100Q"
+                    pedido = "Cachorro quente"
+                    precoUnitario = 1.20 
+                    preco = (precoUnitario * qtd).toFixed(2)
+                    
+                }else if(codigoPedido == 101){
+                    codigoItem = "B101S"
+                    pedido = "Bauru Simples"
+                    precoUnitario = 1.30 
+                    preco = (precoUnitario * qtd).toFixed(2)
+        
+                }else if(codigoPedido == 102){
+                    codigoItem = "B102O"
+                    pedido = "Bauru com Ovo"
+                    precoUnitario = 1.50 
+                    preco = (precoUnitario * qtd).toFixed(2)
+
+                }else if(codigoPedido == 103){ 
+                    codigoItem = "H03R"
+                    pedido = "Hambúrger"
+                    precoUnitario = 1.20 
+                    preco = (precoUnitario * qtd).toFixed(2)
+
+                  }else if(codigoPedido == 104){
+                    codigoItem = "C104R"
+                    pedido = "Cheeseburguer"
+                    precoUnitario = 1.30 
+                    preco = (precoUnitario * qtd).toFixed(2)
+
+                }else if(codigoPedido == 105){
+                    codigoItem = "R105E"
+                    pedido = "Refrigerante"
+                    precoUnitario = 1.00 
+                    preco = (precoUnitario * qtd).toFixed(2)
+                }  
+
+            
+            
+            document.write("CÓDIGO PEDIDO: "+codigoPedido+"<br>")
+            document.write("CÓDIGO ITEM: "+codigoItem+"----PEDIDO: "+pedido+"----PREÇO UNITÁRIO R$: "+precoUnitario+"----QUANTIDADE: "+qtd+"----VALOR TOTAL R$: "+preco+"<br>")  
+            resposta = confirm("DESEJA FAZER OUTRA COMPRA?")
+        }  
+        valorAcumulado += preco;
+        document.write("O VALOR ACUMULADO É DE R$:"+valorAcumulado)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

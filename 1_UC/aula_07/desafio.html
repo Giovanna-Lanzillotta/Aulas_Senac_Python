@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio</title>
+    <script>
+         /* Desafio - Crie uma urna eletronica de votação para . Esta urna deve:
+A. solicitar uma senha para autorizar o inicio da votação, até que a senha esteja correta
+B. assim que a senha correta for digitada, deve solicitar o número do título de eleitor
+C. depois, deve mostrar as opções de voto para o cargo de diretor: 10 - Ana, 20 - Paulo, Branco ou Nulo
+D. ao final, deve exibir:
+    1. a quantidade de pessoas que votou
+    2. a quantidade de votos que cada um recebeu, inclusive Brancos e Nulos
+    3. a lista de títulos digitados*/
+
+    var senha = 12345
+        var resposta = true
+        var numEleitor 
+        var resposta = true
+        var qtdEleitores = 0
+        var voto
+        var votoAna = 0
+        var votoPaulo = 0 
+        var votoNulo = 0
+        
+        document.write("Lista de títulos digitados:"+"<br>")
+        while (resposta) {
+          senha = parseInt(prompt("Digite um senha"))
+           if (senha == 12345) {
+            numEleitor = prompt("Digite o título de eleitor:")
+            voto = parseInt(prompt("OPÇÕES PARA O CARGO DE DIRETOR:" + "\n" + "10 - Ana" + "\n" + "20 - Paulo" + "\n" + "Branco ou Nulo"))
+            qtdEleitores = qtdEleitores + 1
+               if(voto == 10){
+                votoAna = votoAna + 1
+               }else if(voto == 20){
+                votoPaulo = votoPaulo + 1
+               }else{
+                votoNulo = votoNulo + 1
+               }
+           document.write(numEleitor+"<br>")
+           }else {
+                resposta = confirm("TENTE NOVAMENTE!")
+            }  
+        }
+       document.write("Quantidades de pessoas que votaram: "+qtdEleitores+"<br>")
+       document.write("Votos Ana: "+votoAna+"<br>")
+       document.write("Votos Paulo: "+votoPaulo+"<br>")
+       document.write("Votos Brancos ou Nulos: "+votoNulo+"<br>")
+       //document.write("Lista de títulos digitados: "+numEleitor)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
