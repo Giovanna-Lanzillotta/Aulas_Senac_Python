@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/*Uma função que usa o return irá retornar uma informação* para que a chamada*/
+    
+    //Exemplo de função sem parâmetros e com retorno
+    function menu(){
+        let resp = parseInt(prompt("Menu:\n1 - Homem \n2 - Mulher\n3 - Outro\n"))
+        if(resp == 1){
+            document.write("Homem")
+        }else if(resp ==  2){
+            document.write("Mulher")
+        }else if(resp == 3){
+            document.write("Outro")
+        }else{
+            document.write("Opção Inválida!")
+        }
+        return resp;
+    }
+    </script>
+</head>
+<body>
+ <script>
+    var sexo = menu();
+    document.write(sexo);
+    
+ </script>   
+</body>
+</html>

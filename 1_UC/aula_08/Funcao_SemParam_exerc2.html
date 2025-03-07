@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/*
+    Faça uma  função que exiba um menu da seguinte maneira:
+    1 - Homem
+    2 - Mulher
+    3 - Outro
+
+    Faça um algoritmo que chame a função acima.Ao final,exiba o sexo escolhido*/
+    function menu(){
+     sexo = parseInt(prompt("Escolha o sexo:\n 1 - Homem\n 2 - Mulher\n 3 - Outro"))   
+    }
+    </script>
+</head>
+<body>
+    <script>
+        menu();
+        if(sexo == 1){
+            document.write("Homem")
+        }else if(sexo ==  2){
+            document.write("Mulher")
+        }else if(sexo == 3){
+            document.write("Outro")
+        }else{
+            document.write("Opção Inválida!")
+        }
+        
+    </script>
+</body>
+</html>

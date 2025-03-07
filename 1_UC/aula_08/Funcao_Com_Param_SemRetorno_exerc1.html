@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/* 
+Faça uma função que receba duas notas,
+calcule a média e exiba esta média
+Chame esta função*/
+        function notas(nota1, nota2) {
+            media = (nota1 + nota2) / 2
+            document.write("<i>A média é " + media)
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var nota1 = parseFloat(prompt("Digite a primeira nota:"))
+        var nota2 = parseFloat(prompt("Digite a segunda nota"))
+        var media = notas(nota1, nota2)
+    </script>
+</body>
+
+</html>

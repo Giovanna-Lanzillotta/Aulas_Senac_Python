@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*Faça uma função que receba duas notas,
+        calcule a média e retorne esta média
+        Chame esta função no script principal,
+        analise a média:
+        se for igual,ou maior a 9, o aluno ganhará 1 ponto de bônus.
+        Depois,verifique a situação
+        final do aluno: se a média for maior ou igual a 7,
+        APROVADO,
+        caso contrário,REPROVADO*/
+        function mediaNotas(nota1, nota2) {
+            media = (nota1 + nota2) / 2
+            return media;
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var nota1 = parseFloat(prompt("Digite a primeira nota"))
+        var nota2 = parseFloat(prompt("Digite a segunda nota"))
+        mediaNotas(nota1, nota2)
+        if (media >= 7) {
+            document.write("APROVADO"+"<br>")
+        } else {
+            document.write("REPROVADO"+"<br>")
+        }
+        if (media >= 9) {
+            let bonus = 1
+            let notaBonus = mediaNotas(nota1 + nota2) + bonus
+            document.write(notaBonus)
+        }
+
+
+    </script>
+</body>
+
+</html>

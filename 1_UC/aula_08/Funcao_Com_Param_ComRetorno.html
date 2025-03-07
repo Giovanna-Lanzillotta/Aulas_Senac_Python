@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function soma(n1, n2) {
+            let somatorio = n1 + n2
+            return somatorio;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Digite a nota 1:"))
+        // let somatorio = soma(n1,7)
+        let bonus = 4
+        let notaFinal = soma(n1, 7) + bonus
+        document.write("<h1 style=color:blue;>"+notaFinal)
+    </script>
+</body>
+</html>
