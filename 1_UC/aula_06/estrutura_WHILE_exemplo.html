@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while exemplo</title>
+    <script>
+        /*
+        faça um programa que leia as idades das pessoas. Enquanto as idades forem maiores que
+        60 anos, imprimir "Apto para a matrícula"
+ 
+        */
+
+        var idade = 0;
+        var resposta = true
+        while (resposta) {
+            idade = parseInt(prompt("Digite a idade: "));
+            if(idade > 60){
+                document.write("A idade de "+idade+" é Apto para matricula <br>");
+            }else{
+                document.write("A idade de "+idade+"  Não é Apto para matricula <br>");
+            }
+            resposta = confirm("Deseja analisar outra idade? S/N")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

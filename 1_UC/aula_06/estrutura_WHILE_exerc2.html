@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while exerc 2</title>
+    <script>
+       /* 2. Faça um programa que implemente um menu onde o usurário deverá selecionar 1 ou 0. 
+Caso seja inserido um número diferente, o programa deverá solicitar uma nova opção.*/
+        var numero = 0;
+        var resposta = true
+        while(resposta){
+            numero = parseInt(prompt("Digite o número 1 ou 0"))
+            if((numero == 1)||(numero == 0)){
+                document.write("O número escolhido foi "+numero+"<br>")
+            }else{
+                resposta = confirm("Escolha uma nova opção:")
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

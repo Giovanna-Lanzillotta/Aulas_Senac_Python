@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while exerc 4</title>
+    <script>
+       /*
+4.Faça um programa que receba uma senha formada de quatro números inteiros, verifique se a senha está
+correta e, enquanto não estiver correta, solicite novamente a senha. Se a senha inserida for a correta, 
+deverá ser apresentada a mensagem “Senha Correta”, caso contrário, “Senha Incorreta”. */
+var senha = 1234
+        var resposta = true
+        while (resposta) {
+            senha = parseInt(prompt("Digite um senha"))
+            if (senha == 1234) {
+                document.write("SENHA CORRETA") 
+                resposta = false               
+            } else {
+                document.write("SENHA INCORRETA")
+                resposta = confirm("TENTE NOVAMENTE")
+            }
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

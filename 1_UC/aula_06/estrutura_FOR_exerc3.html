@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for exerc 3</title>
+    <script>
+        /*3. Faça um algoritmo que leia o nome e 2 duas notas de 5 alunos, calcule a média para cada
+aluno e informe se, o aluno está aprovado ou reprovado de acordo com a regra:
+    Aprovado, se a média for maior ou igual a 7
+    Reprovado, se a média for menor que 7 */
+
+    for(var i = 0;i < 5;i++){
+        nome = prompt("Digite o nome");
+        nota1 = parseFloat(prompt("Digite a nota"));
+        nota2 = parseFloat(prompt("Digite a nota"));
+        media = (nota1+nota2/2);  
+    
+    if(media >=7){
+       situacao = "Aprovado"
+    }else{
+        situacao = "Reprovado"
+        }
+    document.write(nome+" esta "+situacao+"<br>")
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

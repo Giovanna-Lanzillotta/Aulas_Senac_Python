@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while exerc 1</title>
+    <script>
+        /*
+1.Faça um programa,utilizando while,que permita o usuário fazer contas de adição enquanto quiser.*/
+var numero1 = 0;
+        var numero2 = 0;
+        var resultado
+        var resposta = true
+        while(resposta){
+            numero1 = parseFloat(prompt("Digite um número"))
+            numero2 = parseFloat(prompt("Digite outro número"))
+            resultado = numero1 + numero2
+            document.write(numero1+ " + "+numero2+" = "+resultado+"<br>")
+            resposta = confirm("Deseja fazer outra conta??")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
