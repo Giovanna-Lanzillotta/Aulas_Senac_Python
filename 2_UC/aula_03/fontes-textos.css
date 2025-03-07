@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+.cor{
+color:red;
+color:#00ff00;
+color:#00ff0030; /*foca no hexa */
+color:rgb(0,0,255);
+color:rgba(201,76,76,0.2);  /*a é para saturação*/
+color:hsl(140,35%,45%);
+color:hsla(140,35%,45%,0.5);
+/* o último atributo é o que vale*/
+}
+
+.estilo{
+font-style:normal;
+font-style:italic;
+font-style:oblique;
+}
+
+.variante{
+font-variant:normal;
+font-variant:inherit; /*herda do elemento pai*/
+font-variant:small-caps;
+}
+
+.peso{
+font-weight:medium;/*padrão*/
+font-weight:inherit;
+font-weight:bold;  /*negrito*/
+font-weight:bolder;/*mais negrito que o elemento pai*/
+font-weight:ligther;
+font-weight:700;
+}
+
+.familia{
+font-family:inherit;
+font-family:verdana,arial,sans-serif;/*quando não encontrado uma fonte passa para proxima*/
+}
+
+.tamanho{
+font-size:medium; /*padrão 16px*/
+font-size:xx-small;
+font-size:x-small;
+font-size:small;
+font-size:large;
+font-size:x-large;
+font-size:xx-large;
+font-size:smaller; /*menor que o elemento pai*/
+font-size:larger; /*maior que o elemento pai*/
+font-size:inherit;/*herdado do elemento pai*/
+font-size:5px;
+font-size:50%;
+}
+
+.alinha{
+text-align:left;/*padrão alinhado a esquerda*/
+text-align:right;
+text-align:justify;
+text-align:center;
+}
+
+.sublinhado{
+text-decoration-line:none;/*padrão*/
+text-decoration-line:underline;
+text-decoration-line:overline;
+text-decoration-line:line-through;
+text-decoration-line:underline overline line-through;
+}
+
+.cor-linha{
+text-decoration-line:underline;
+text-decoration-color:red;
+}
+
+.estilo-linha{
+text-decoration-line:underline;
+text-decoration-color:magenta;
+text-decoration-style:solid;/*padrão*/
+text-decoration-style:double;
+text-decoration-style:dotted;
+text-decoration-style:dashed;
+text-decoration-style:inherit;/*assume do eleento anterior*/
+text-decoration-style:wavy;
+}
+
+.espessura{
+text-decoration-color:Chartreuse;
+text-decoration-line:line-through;
+text-decoration-thickness:10px;
+text-decoration-thickness:30%;
+}
+
+.indenta{
+text-indent:50px;
+text-indent:50%;
+}
+
+.transforma{
+text-transform:none;/*padrão*/
+text-transform:inherit;/*herda*/
+text-transform:capitalize;
+text-transform:lowercase;
+text-transform:uppercase;
+}
+
+.sombrita{
+text-shadow: 2px 2px 5px Indigo;
+}
