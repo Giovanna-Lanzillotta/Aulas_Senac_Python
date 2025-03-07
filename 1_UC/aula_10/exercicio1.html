@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // criar uma matriz de 2 linhas e 3 colunas para armazenar as idades.
+        //exiba o somatório das idades
+        var linhas = 2
+        var colunas = 3
+        var soma = 0
+        var matriz = new Array(linhas)
+        for(var i = 0;i < linhas;i++){
+            matriz[i] = new Array(colunas)
+            for(var j = 0;j < colunas;j++){
+                matriz[i][j] = parseInt(prompt("Digite a idade"))
+                soma +=matriz[i][j]
+                document.write(matriz[i][j]+"  ")
+            }
+            document.write("<br>")  
+        }
+        document.write("Somatório das idades: "+soma)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Criar uma matriz de 2 linhas e 2 colunas
+        
+        var linhas = 3
+        var colunas = 2
+        var matriz = new Array(linhas)
+        for(var i = 0;i < linhas;i++){
+            matriz[i] = new Array(colunas)
+            for(var j = 0;j < colunas;j++){
+                matriz[i][j] = prompt("Digite a fruta")
+                document.write(matriz[i][j]+"  ")
+            }
+            document.write("<br>")
+        }
+       //document.write(matriz.length)
+    </script>
+</body>
+</html>

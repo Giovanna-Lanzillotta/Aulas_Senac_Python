@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //criar um vetor simples
+        var vetor = ["Pêra", "Uva"]
+        document.write(vetor + "<br>")
+        document.write(vetor[0] + "<br>")
+        document.write(vetor[1] + "<br>")
+
+        //Matriz
+        //Criar uma matriz de 3 linhas e duas colunas
+        //   c c     c c    c  c
+        // [[ , ]],[[ , ]],[[ , ]]
+        //    l       l       l
+        document.write("<br>")
+        document.write("---- MATRIZ ----<br>")
+        document.write("<br>")
+        var matriz = [
+            ["Pêra", "Uva"],
+            ["Maça", "Abacate"],
+            ["Melão", "Jambo"]
+        ];
+        document.write(matriz[1][1] + "<br>")
+        document.write(matriz.length)
+        document.write("<br> <br>")
+
+        //ler a matriz inteira usando loop
+        var matriz2 = [
+            ["Pêra", "Uva"],
+            ["Maça", "Abacate"],
+            ["Melão", "Jambo"]
+        ];
+        for (var i = 0; i < matriz2.length; i++) {
+            document.write(matriz2[i] + "<br>")
+        }
+        document.write("<br><br>")
+
+        // i = linha ; j = coluna
+        var i,j
+        for (var i = 0; i < matriz2.length; i++) {
+            for (var j = 0; j < (matriz2.length - 1); j++) {
+                document.write(matriz2[i][j]+"  ")
+            }
+            document.write("<br>")
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
