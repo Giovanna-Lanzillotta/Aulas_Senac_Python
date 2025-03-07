@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+    <script>
+        /*2- Faça um programa que faça 5 perguntas para uma pessoa sobre um crime.As perguntas são:
+        “Telefonou para a vítima? “
+        “Esteve no local do crime?”
+        “Mora perto da vítima? “
+        “Devia para a vítima? “
+        “Já trabalhou com a vítima? “
+        O programa deve no final emitir uma classificação sobre a participação da pessoa no crime.
+         Se a pessoa responder positivamente a 2 questões ela deve ser classificada como “Suspeita”, 
+         entre 3 e 4 como “Cúmplice” e 5 como “Assassino“. Caso contrário,
+          ele será classificado como “Inocente“.*/
+        //TERMINAR
+        var resposta1, resposta2, resposta3, resposta4, resposta5, pontuacao
+        pontuacao = 0
+
+        resposta1 = prompt("1 - Telefonou para a vítima?")
+            if(resposta1 =="sim"){
+                pontuacao = pontuacao + 1
+            }
+
+        resposta2 = prompt("2 - Esteve no local do crime?")
+            if(resposta2 =="sim"){
+                pontuacao = pontuacao + 1    
+        }
+
+        resposta3 = prompt("3 - Mora perto da vítima?")
+            if(resposta3 =="sim"){
+                pontuacao = pontuacao + 1 
+            }
+        
+        resposta4 = prompt("4 - Devia para a vítima?")
+            if(resposta4 =="sim"){
+                pontuacao = pontuacao + 1   
+            }
+
+        resposta5 = prompt("5 - Já trabalhou com a vítima?")
+            if(resposta5 =="sim"){
+                pontuacao = pontuacao + 1
+                } 
+                
+        document.write("1 - Telefonou para a vítima? "+resposta1+"<br>")
+        document.write("2 -  Esteve no local do crime? "+resposta2+"<br>")
+        document.write("3 - Mora perto da vítima? "+resposta3+"<br>")
+        document.write("4 - Devia para a vítima? "+resposta4+"<br>")
+        document.write("5 -  Já trabalhou com a vítima? "+resposta5+"<br>")
+        document.write(" A sua pontuaçao foi de "+pontuacao+"<br>")
+
+        if (pontuacao == 2){
+            document.write("Suspeita")
+        }else if((pontuacao ==3)||(pontuacao == 4)){
+            document.write("Cúmplice")
+        }else if(pontuacao == 5){
+            document.write("Assassino")
+        }else{
+            document.write("Inocente")
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

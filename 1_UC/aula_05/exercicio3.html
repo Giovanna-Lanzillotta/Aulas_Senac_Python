@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercico 3</title>
+    <script>
+        /* 3. Um posto está vendendo combustíveis com a seguinte tabela de descontos:   
+        
+        Álcool:
+        Até 20 litros: desconto de 3% por litro
+        Acima de 20 litros: Desconto de 5% por litro .
+        
+        Gasolina:
+        Até 20 litros: desconto de 4% por litro
+        Acima de 20 litros, desconto de 6% por litro
+        
+        Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível 
+        (codificado da seguinte forma: A-álcool. G-gasolina), 
+        o valor do combustível, e calcule e imprima o valor a ser pago pelo cliente.   */
+
+        var litros,combustivel,desconto,preco,preco_desconto,preco_total
+        litros = prompt("Qual o valor de litros vendidos?")
+        combustivel = prompt("Qual o tipo de combustivel? A - Ácool. G- Gasolina")
+        
+        switch(combustivel){
+            case "A":
+                preco = 4.04
+                if (litros <= 20){
+                    preco_total = litros * preco
+                    desconto = litros * 0.03
+                    preco_desconto = preco_total - desconto
+                    document.write("ALCOOL COM ATÉ 2O LITROS<BR>")
+                    document.write("O preco de "+litros+"litros.É de R$"+preco_desconto)
+                }else if(litros >20){
+                    document.write("ALCOOL COM MAIS DE 2O LITROS<BR>")
+                    preco_total = litros * preco
+                    desconto = litros * 0.05
+                    preco_desconto = preco_total - desconto
+                    document.write("O preco de "+litros+"litros.É de R$"+preco_desconto)
+                }
+                break
+            case "G":
+                preco =6.10
+                if (litros <= 20){
+                    preco_total = litros * preco
+                    desconto = litros * 0.04
+                    preco_desconto = preco_total - desconto
+                    document.write("GASOLINA COM ATÉ  2O LITROS<BR>")
+                    document.write("O preco de "+litros+"litros.É de R$"+preco_desconto)
+                }else if(litros >20){
+                    preco_total = litros * preco
+                    desconto = litros * 0.06
+                    preco_desconto = preco_total - desconto
+                    document.write("GASOLINA COM MAIS DE 2O LITROS<BR>")
+                    document.write("O preco de "+litros+"litros.É de R$"+preco_desconto)
+                }
+            
+                break
+            default:
+              document.write("opção inválida")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

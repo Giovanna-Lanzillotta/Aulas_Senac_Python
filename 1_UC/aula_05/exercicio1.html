@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio1 </title>
+    <script>
+        /*Faça um programa que peça 3 lados de um triângulo.O programa deverá informar se os valores 
+podem ser um triângulo.indique,caso os lados formem um triângulo,se o mesmo é equilátero,isósceles
+ou escaleno.Dicas:
+    Triângulo Equilátero:três lados iguais;
+    TriÂngulo Isósceles :quaisquer dois lados iguais;
+    Triângulo Escaleno:três lados diferentes. */
+    var lado1, lado2, lado3
+        lado1 = parseFloat(prompt("Qual o valor do primeiro lado:"))
+        lado2 = parseFloat(prompt("Qual o valor do segundo lado:"))
+        lado3 = parseFloat(prompt("Qual o valor do terceiro lado:"))
+        
+        if(((lado1 + lado2 > lado3)&&(lado2 + lado3 > lado1))&&(lado1 + lado3 > lado2)){
+            document.write("É um triângulo!<br>")
+            if((lado1 == lado2)&&(lado1 == lado3)&&(lado2 == lado3)){
+                document.write("Equilátero")
+            }else if((lado1 == lado2)||(lado2 == lado3)||(lado1 == lado3)){
+                document.write("Isósceles")
+            }else{
+                document.write("Escaleno")
+            }
+            }else{
+                document.write("Não é um triângulo!")
+            }    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

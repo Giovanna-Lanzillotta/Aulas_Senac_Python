@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 5 </title>
+    <script>
+         /*5. Codifique um programa que faça a leitura de dois número inteiros. A
+       seguir o programa lê uma operação aritmética, que deve ser +, -, * ou /, e realiza
+       a operação indicada pelo operador sobre os valores lidos.*/
+       var numero1,numero2,escolha
+
+numero1 = parseInt(prompt("Digite o primeiro número"))
+numero2 = parseInt(prompt("Digite o segundo número"))
+escolha = prompt("Escolha uma operação aritmética : + , - , * ou /,")
+
+switch (escolha) {
+    case "+":
+        document.write("O resultado de "+numero1+" + "+numero2+" = "+(numero1 + numero2))
+        break
+    case "-":
+    document.write("O resultado de "+numero1+" - "+numero2+" = "+(numero1 - numero2))
+        break
+    case "*":
+    document.write("O resultado de "+numero1+" * "+numero2+" = "+(numero1 * numero2))
+        break
+        case "/":
+        document.write("O resultado de "+numero1+" / "+numero2+" = "+(numero1 / numero2))
+        break
+    default:
+        document.write("opção inválida")
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
