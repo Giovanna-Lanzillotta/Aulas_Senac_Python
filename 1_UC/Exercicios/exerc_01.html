@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/*
+1.Crie um script,usando função e vetor.Ele deve armazenar nome,idade e sexo de um número indeterminado de pessoas.
+Ao final exiba uma lista com os nomes,A soma das idades.O Total de pessoas para cada sexo escolhido.*/
+
+        var nome = []
+        var idade = []
+        var sexo
+        var resposta = true
+        var i = 0
+        var soma = 0 
+        var totalHomem = 0
+        var totalMulher = 0
+        var totalOutro = 0
+        
+        function menu() {
+            while (resposta) {
+                nome.push(prompt("Digite um nome: "))
+                //document.write(nomes+"<br>")
+                //document.write("O tamanho do vetor é "+nomes.length+"<br>")
+
+                idade.push(parseInt(prompt("Digite uma idade:")))
+                soma += idade[i]
+                //document.write(notas+"<br>")
+                //document.write("O tamanho do vetor é "+notas.length+"<br>")
+
+                sexo = parseInt(prompt("Escolha o sexo:\n 1 - Homem\n 2 - Mulher\n 3 - Outro"))
+                if (sexo == 1) {
+                    sex ="Masculino"
+                  totalHomem +=1
+                } else if (sexo == 2) {
+                    sex ="Feminino"
+                totalMulher +=1
+                } else if (sexo == 3) {
+                    sex = "Outro"
+                totalOutro +=1
+                }
+                resposta = confirm("Deseja digitar novamente")
+                document.write(nome[i] + " - " + idade[i] + " - " +sex + "<br>")
+                i++
+            }
+            document.write("O número de pessoas é " + nome.length + "<br>")
+            document.write("A soma das idades é:" + soma + "<br>")
+            document.write("O número do sexo masculino  é " +totalHomem+ "<br>")
+            document.write("O número do sexo feminino é " +totalMulher+"<br>")
+            document.write("O número de outros é " +totalOutro + "<br>")
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        menu();
+
+    </script>
+
+</body>
+
+</html>

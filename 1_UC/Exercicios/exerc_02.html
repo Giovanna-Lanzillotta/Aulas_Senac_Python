@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/*
+2. Faça um script de lanchonete. Este script deverá:
+a. perguntar se deseja abrir o caixa e, caso sim, solicitar a senha. Observação a senha deve estar correta.
+b. o pedido do cliente deverá receber um número automaticamente;
+c. o pedido do cliente deverá conter o nome do cliente
+d. o pedido poderá conter mais de um item, por isso é importante exibir um menu a cada novo item que for inserido.
+e. para cada item deverá solicitar a quantidade.
+f. calcular o valor total de cada item.
+g. calcular o valor total do pedido
+h. calcular o valor total vendido no dia.
+i. imprimir cada um dos pedidos
+
+Observação: o número de cliente não é definido, por isso deverá perguntar se deseja abrir novo pedido para um 
+novo cliente.*/
+        var caixa
+        var senha
+        var numero = []
+        var nome = []
+        var resposta = true
+        const produtos = ["COXINHA", "PÃO DE QUEIJO", "JOELHO", "HAMBURGUER", "GUARAVITA", "REFRIGERANTE", "SUCO", "ÁGUA"]
+        const precos = [7.00, 6.50, 8.00, 10.00, 3.00, 5.00, 4.50, 2.00]
+        function senha() {
+            caixa = parseInt(prompt("Deseja abrir a caixa \n 1- sim 2 - não"))
+            while (resposta) {
+                if (caixa == 1) {
+                    senha = parseInt(prompt("Digite a senha"))
+                    if (senha == 12345) {
+                        resposta = false
+                    } else {
+                        alert("Senha incorreta")
+                    }
+                }
+            }
+        }
+        function imprimir() {
+            document.write("<h1>Cliente:" + nome + "<br>Número do pedido:" + numero +"</h1><br>")
+            document.write("<h3>Produto------quantidade-----preço individual-----preço multiplicado</h3>"+"<br>")
+                document.write(valorItem)
+                document.write("<h4>PREÇO TOTAL: R$"+valorTotal+"<h4>")
+        }
+
+        function pedido() {
+            nome = prompt("Digite o nome do cliente")
+            numero += Math.floor(Math.random() * 1000);
+            alert("Cliente:" + nome + "\nNúmero do pedido:" + numero);
+
+            var itens = [];
+            var qtd = [];
+            var numItens = 1;
+
+            for (var i = 0; i < numItens; i++) {
+                let resposta = true;
+                while (resposta) {
+                    itens[i] = prompt("Digite o item :\nCOXINHA PÃO DE QUEIJO JOELHO HAMBURGUER\nGUARAVITA REFRIGERANTE SUCO ÁGUA")
+                    if (produtos.includes(itens[i])) {
+                        resposta = false;
+                    }
+                    else {
+                        alert("Produto não encontrado,tente novamente!");
+                    }
+
+                }
+
+                qtd[i] = parseInt(prompt("Quantidade de " + (itens[i]) + ": "));
+
+                let index = produtos.indexOf(itens[i]);
+                let preco = precos[index];
+
+                valorTotal += preco * qtd[i];
+valorItem[i] = (itens[i] + "---------" + qtd[i] + "-------------" + preco+ "-----------------" + (preco * qtd[i])+ "<br>");
+
+                let conf = confirm("Adicionar mais itens?: ");
+                if (conf) {
+                    numItens++;
+                }
+
+            }
+            imprimir();
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <script>
+
+        senha();
+        iniciarPedido();
+
+        function iniciarPedido() {
+            valorItem = [];
+            valorTotal = 0;
+            pedido();
+        }
+
+        const continuar = confirm("Novo pedido?");
+        if (continuar) {
+            setTimeout(() => {
+                iniciarPedido()();
+            }, 900);
+        } else {
+            alert("FIM!");
+        }
+    </script>
+
+</body>
+
+</html>
