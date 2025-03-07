@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 4</title>
+    <script>/*
+4.Desenvolva uma função que calcule o valor de um produto com desconto.
+A função deve receber o valor original do produto e o percentual de desconto como parâmetros,
+e retornar o valor com desconto aplicado.
+Utilize essa função para calcular o valor final de diferentes produtos.*/
+        function valorProduto(valorOriginal,desconto){
+            valorDesconto = (valorOriginal * (desconto/100))
+            precofinal = valorOriginal - valorDesconto
+            return precofinal;
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        var valorOriginal = parseFloat(prompt("Digite o valor original do produto:"))
+        var desconto = parseFloat(prompt("Digite o valor do desconto:"))
+        valorProduto(valorOriginal,desconto)
+        document.write("valor do desconto R$"+valorDesconto+"<br>")
+        document.write("valor final com desconto R$"+precofinal)
+    </script>
+</body>
+
+</html>
