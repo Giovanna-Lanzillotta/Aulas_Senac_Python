@@ -1,0 +1,48 @@
+.quadrado{
+    transition: all 0.5s ease-in-out;
+    transition: translatez(-100px);
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(196, 250, 146);
+    border: 2px solid black;
+    text-align: center;
+    line-height: 400px;
+    font-size: 50px;
+    color: rgb(147, 69, 236);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*float:right;*/
+
+    /*bordas*/
+    border-style: dashed dotted;
+    border-color: black;
+    border-width: 5px;
+    /*bordas*/
+}
+.quadrado:hover{
+    transform: rotate(360deg);
+    transition: 0.9s;
+    background-color: rgb(221, 215, 164);
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    line-height: 400px;
+    font-size: 50px;
+    color: rgb(16, 81, 100);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: dashed;
+    border-color: rgb(191, 41, 211) rgb(255, 0, 0) yellow green;
+    border-width: 5px;
+    cursor: progress;
+}
+html{
+    background-color: rgb(208, 243, 243);
+}
+.titulo-principal{
+    background-color:  rgb(220, 192, 240);
+    color: rgb(19, 112, 250);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    border: 1px solid black;
+}
