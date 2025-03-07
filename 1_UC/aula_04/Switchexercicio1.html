@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch ex1</title>
+    <script>
+         /* SWITCH
+        1 - Faça um algoritmo que leia idade e sexo de uma pesso
+Se o se o for feminino e a idade inferior a 3,imprimir:Matricular no maternal 1,
+casocontrário se a idade estiver em 3 e 4, imprimir :Matricular no Jardim 1 ,caso contrário,
+se a idade sor maior que 4 e menor ou igual a 6,impimir:Matricular do Pré 1 
+
+Se o se o for masculino e a idade inferior a 3,imprimir:Matricular no maternal 2,
+casocontrário se a idade estiver em 3 e 4, imprimir :Matricular no Jardim 3 ,caso contrário,
+se a idade sor maior que 4 e menor ou igual a 6,impimir:Matricular do Pré 2 */
+var idade,sexo
+        sexo = prompt("digite o sexo da pessoa")
+        idade = parseInt(prompt("Digite a idade"))
+        
+        switch(sexo){
+            case "F":
+                if(idade < 3){
+            document.write("matricular no maternal 1")
+                 } else if((idade >=3)||(idade <=4)){
+                document.write("matricular no jardim 1")
+              }else{
+                document.write("matricular no Pré 1")
+              }
+                break
+            case "M":
+            if(idade < 3){
+            document.write("matricular no maternal 2")
+            }else if((idade >=3)||(idade <=4)){
+                document.write("matricular no jardim 2")
+            }else{
+                document.write("matricular no Pré 2")
+            }
+                break
+            default:
+              document.write("opção inválida")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
