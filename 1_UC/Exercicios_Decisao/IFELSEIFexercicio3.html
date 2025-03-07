@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* IF ELSE IF
+3- o imc(indice de massa corporal) indica o grau de obesidade dea pessoa.Este índice é obtido pelo
+peso(em kg)dividido pelo quadrado da altura (em metros).A tabela apresenta as faixas deste índice
+IMC     AVALIAÇÃO
+<20    Abaixo do peso
+[20,25] Normal
+[25,30] Sobrepeso
+[30,35] Obesidade leve
+[35,40] Obesidade moderada
+> 40    Obesidade Mórbida */
+        var peso, altura, imc
+        peso = parseFloat(prompt("Digite seu peso:"))
+        altura = parseFloat(prompt("Digite sua altura:"))
+        imc = (peso / (altura * altura)).toFixed(2)
+
+        if (imc < 20) {
+            document.write("Abaixo do peso")
+        } else if ((imc >= 25) && (imc > 30)) {
+            document.write("Normal")
+        } else if ((imc >= 30) && (imc > 35)) {
+            document.write("Obesidade leve")
+        } else if ((imc > 35) && (imc > 40)) {
+            document.write("Obesidade moderada")
+        } else {
+            document.write("Obesidade Mórbida")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

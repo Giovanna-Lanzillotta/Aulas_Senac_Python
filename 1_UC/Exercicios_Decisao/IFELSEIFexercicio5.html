@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*  5- Façaum script que recebe o salário de um colaborador e o reajuste segundo o seguinte critério,
+        baseado no salário atual:
+            salários até R$ 280,00(incluindo):aumento de 20%
+            salários entre R$ 280,00 e R$ 700,00 :aumento de 15%
+            salários entre R$700,00 e R$ 1500,00:aumento de 10%
+            salários de R$ 1500,00 em diante:aumento de 5% 
+            
+            Após o aumento ser realizado,imforme na tela:
+    o salário antes do reajuste;
+    o percentual de aumento aplicado;
+    o valor do aumento;
+    o novo salário,após o aumento.*/
+
+    var salario,aumento,valor_aumento,novo_salario
+
+    salario = parseFloat(prompt("Informe o salario: "))
+
+    if(salario <=280){
+        aumento = 0.20
+        valor_aumento = salario * aumento
+        novo_salario = (salario + valor_aumento)
+    }else if((salario >280)&&(salario<700)){
+        aumento = 0.15
+        valor_aumento = salario * aumento
+        novo_salario = (salario + valor_aumento)
+    }else if((salario >=700)&&(salario <=1500)){
+        aumento = 0.10
+        valor_aumento = salario * aumento
+        novo_salario = (salario + valor_aumento)
+    }else{
+        aumento = 0.05
+        valor_aumento = salario * aumento
+        novo_salario = (salario + valor_aumento)
+    }
+
+    document.write("O salário antes do reajuste é R$"+salario+"<br>")
+    document.write("O percentual de aumento aplicado é "+aumento+"%<br>")
+    document.write("O valor do aumento é R$"+valor_aumento+"<br>")
+    document.write("O novo salário é R$"+novo_salario)
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /*  IF ELSE IF
+6- Faça um script para o cálculo de uma folha de pagamento,sabendo que os descontos são do imposto de 
+renda,que depende do salário bruto(conforme a tabela abaixo) e 3% para o sindicato e que o FGTS corresponde 
+a 11% do salário bruto,mas não é descontado(é a empresa que deposita).O salário líquido corresponde ao
+Salário bruto menos os desconto.O script deverá pedir ao usuário o valor de sua hora e a 
+quantidade de horas trabalhadas no mês
+    
+    DESCONTO DO IR:
+    Salário Bruto até 900(inclusive) - insento
+    Salário Bruto até 1500(inclusive) - desconto de 5%
+    Salário Bruto até 2500(inclusive) - desconto de 10%
+    Salário Bruto acima de 2500 - desconto de 20%
+    
+    Imprima na tela as informações,dispostas conforme o exemplo abaixo.No exemplo o valor da hora é 5 e 
+    a quantidade de hora é 220
+    
+    Salário Bruto(5 * 220)  :R$ 1100,00
+    (-)IR(5%)                :R$ 55,00
+    (-)INSS(10%)            :R$ 1100,00
+    FGTS(11%)               :R$ 121,00
+    Total de descontos      :R$ 165,00
+    Salário Liquido         :R$ 935,00 */
+
+        var salario_bruto,desconto,ir,inss,fgts,salario_liquido,total_desconto,horas_trabalhadas
+
+        valor_hora = parseFloat(prompt("Qual o valor da sua hora trabalhadas?"))
+        horas_trabalhadas = parseFloat(prompt("Quantas horas foram trabalhadas?"))
+        salario_bruto = (valor_hora * horas_trabalhadas)
+
+        if((salario_bruto > 900)&&(salario_bruto <= 1500)){
+            desconto = (salario_bruto * 0.05)
+            ir = (salario_bruto * 0.05)
+            inss = (salario_bruto * 0.10)
+            fgts = (salario_bruto * 0.11)
+            total_desconto = ( ir + inss )
+            salario_liquido = (salario_bruto - total_desconto)
+        document.write("Salário Bruto R$:"+salario_bruto+"<br>")
+        document.write("(-)IR R$:"+ir+"<br>")
+        document.write("(-)INSS R$:"+inss+"<br>")
+        document.write("FGTS R$:"+fgts+"<br>")
+        document.write("Total de descontos R$:"+total_desconto+"<br>")
+        document.write("Salário Liquido R$:"+salario_liquido)  
+
+        }else if((salario_bruto > 1500)&&(salario_bruto <=2500)){
+            desconto = (salario_bruto * 0.10)
+            ir = (salario_bruto * 0.05)
+            inss = (salario_bruto *0.10)
+            fgts = (salario_bruto * 0.11)
+            total_desconto = ( ir + inss )
+            salario_liquido = (salario_bruto - total_desconto)
+        document.write("Salário Bruto R$"+salario_bruto+"<br>")
+        document.write("(-)IR R$:"+ir+"<br>")
+        document.write("(-)INSS R$:"+inss+"<br>")
+        document.write("FGTS R$:"+fgts+"<br>")
+        document.write("Total de descontos R$:"+total_desconto+"<br>")
+        document.write("Salário Liquido R$:"+salario_liquido)  
+
+        }else if(salario_bruto > 2500){
+            desconto = (salario_bruto * 0.20)
+            ir = (salario_bruto * 0.05)
+            inss = (salario_bruto * 0.10)
+            fgts = (salario_bruto * 0.11)
+            total_desconto = ( ir + inss )
+            salario_liquido = (salario_bruto - total_desconto)
+        document.write("Salário Bruto R$"+salario_bruto+"<br>")
+        document.write("(-)IR R$:"+ir+"<br")
+        document.write("(-)INSS R$:"+inss+"<br>")
+        document.write("FGTS R$:"+fgts+"<br>")
+        document.write("Total de descontos R$:"+total_desconto+"<br>")
+        document.write("Salário Liquido R$:"+salario_liquido)  
+        }else{
+            document.write("insento")
+        }
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

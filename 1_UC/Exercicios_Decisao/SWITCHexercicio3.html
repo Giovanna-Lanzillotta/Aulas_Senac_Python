@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* SWITCH
+3-Suponha que você esteja desenvolvendo um programa para o caixa de mercado do seu bairro
+
+Esse programa deve ser capaz de multiplicar o valor unitário pela quantidade de um produto do comércio 
+recebendo como entrada apenas o código identificador dele e a quantidade 
+
+Tabela
+CÓDIGO  PRODUTO       VALOR UNITÁRIO
+100    Detergente       R$ 1,59
+101    Esponja          R$ 4,59
+102    Lã de aço        R$ 1,79 */
+
+        var codigo,quantidade,preco
+        codigo = parseInt(prompt("Digite o código do produto:"))
+        quantidade = parseInt(prompt("Digite a quantidade do produto:"))
+
+        switch(codigo){
+            case 100:
+               preco = (quantidade * 1.59).toFixed(2)
+               document.write("O preço total é de: "+preco)
+                break
+            case 101:
+           preco = (quantidade * 4.59).toFixed(2)
+           document.write("O preço total é de: "+preco)
+                break
+            case 102:
+           preco = (quantidade * 1.79).toFixed(2)
+           document.write("O preço total é de: "+preco)         
+             break
+            default:
+              document.write("opção inválida")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
